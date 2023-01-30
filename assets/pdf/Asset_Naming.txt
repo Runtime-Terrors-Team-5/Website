@@ -1,0 +1,63 @@
+A quick document to outline the naming conventions for the assets.
+
+Each asset will have a Prefix, Middle and Suffix.
+Prefix: Shows what type of asset it is.
+Middle: Explains in text form what the asset is meant to be. (Won't require any further explaination)
+Suffix: If an asset has variations it will have a suffix to distinguish between different variants
+
+####################################
+Prefixes            
+C_                  Chef/Customer
+E_                  Entity/Element (anything that can be picked up)
+M_                  Menu/UI Components (so far just the Chef's Inventories)
+T_                  Tiles/Tileset (anything that makes up the floor)
+
+####################################
+Suffixes are specific to the Prefix
+####################################
+C_Suffixes          
+_N                  Normal/Neutral
+_M                  Mad
+_M2                 Mad Stage 2
+
+####################################
+E_Suffixes          
+_N                  Normal
+_F                  Fail
+_R                  Roasted/Cooked
+_C                  Chopped Completely
+_PC                 Partially Chopped
+<No Suffix>         Reserved for completed meals
+
+####################################
+M_Suffixes
+_N                  Normal (Empty Inventory)
+_L                  Locked
+_Sx                 Selected x = Slot Selected
+_Cxyz               Craftable x,y,z = Ingredients that can be crafted together to make a meal. x,y,z can be null
+
+Slot 1 = Top Slot
+Slot 2 = Middle Slot
+Slot 3 = Bottom Slot
+Examples:
+_S3                 Only the bottom slot has an item in
+_C12                Top two slots can be crafted together to make something
+
+####################################
+T_Suffixes
+_N                  Normal
+_L                  Locked
+_S                  Selected
+_A                  Alt (Mainly for the floor)
+
+####################################
+Credits:
+*Assets created by Callum Watson using other components sourced from google
+under the licence: Creative Commons CC0 1.0 Universal Public Domain Dedication. See more here:
+https://creativecommons.org/publicdomain/zero/1.0/
+
+*Assets packed using gdx-texturepacker.jar:
+https://libgdx.com/wiki/tools/texture-packer
+
+*System Inspired From Techniques used here:
+https://ikrima.dev/ue4guide/wip/assets-naming-convention/
